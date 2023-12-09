@@ -1,0 +1,193 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage[dvipsnames]{xcolor}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{CV}
+\author{\LaTeX{} Hemant Katta}
+\date{9 December 2023}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{}{ Hemant Katta}{An Electronics and Communication Engineer Graduate }{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.6,0.6,0.6 -- 0.5,0.5,0.5
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{Hemant.jpeg}
+    \begin{center}
+        Hemant Katta
+    \end{center}
+\end{center}
+
+\bigskip
+\bg{black}{yellow}{About me}\\[0.5em]
+
+{\footnotesize
+\lorem}
+\bigskip
+
+\bg{black}{yellow}{HEMANT KATTA \infobubble{\faGlobe}{cvgreen}{white}{}} \\[0.5em]
+
+
+\href{https://hemantkatta.blogspot.com/}{Hemant Katta}
+
+\bigskip
+
+\bg{black}{yellow}{g-MAIL} \\[0.5em]
+
+\href{mailto:hemantkatta123@gmail.com}{hemantkatta123@gmail.com}
+
+\bigskip
+
+\bg{black}{yellow}{TINKERCAD} \\[0.5em]
+
+\href{https://www.tinkercad.com/dashboard?type=circuits&collection=designs}{Tinkercad}
+
+\bigskip
+
+
+
+\bigskip
+
+\bg{black}{yellow}{Software Tools}\\[0.5em]
+
+ArduinoDroid ~•~ Temux ~•~ Adobe AI ~•~ MATLAB ~•~ Jupyter notebook
+
+\bigskip
+
+
+
+\vspace{4em}
+\bg{black}{yellow}{HEMANT KATTA \infobubble{\faGithub}{cvgreen}{white}{}} \\[0.5em]
+\href{https://github.com/hemant467}{hemant467}
+
+
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+
+Organized and dependable candidate successful at managing multiple priorities with a positive attitude.
+
+\vspace{1em}
+
+
+\section*{Education}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2019--2023}{\href{https://www.gcetece.org/}{B.Tech Electronics and Communication
+Engineering}}{Geethanjali College Of Engineering and
+Technology}{08/2019 - 08/2023}{6.9 CGPA}{gctc logo-1.png} \\
+    \cvevent{2023}{Certificate Program in Future Wireless Communications
+}{FWC}{IITH \color{cvred}}{Digital Design through Embedded Programming}{IITH Logo.png}\\
+    \cvevent{}{\href{https://github.com/hemant467/FWC}{Certificate Program in Future Wireless Communications}}{FWC}{IITH \color{cvred}}{}{IITH Logo.png}
+\end{tabular}
+\vspace{2em}
+
+
+
+\section*{Programming}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{HTML, CSS} &  \barrule{0.53}{0.5em}{blue}100\\
+     \bg{skilllabelcolour}{iconcolour}{C} & \barrule{0.36}{0.5em}{yellow}60 \\
+     \bg{skilllabelcolour}{iconcolour}{Arduino} & \barrule{0.36}{0.5em}{red}60\\
+     \bg{skilllabelcolour}{iconcolour}{java} & \barrule{0.2}{0.5em}{cvgreen}40 \\
+     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.05}{0.5em}{blue}10 \\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.53}{0.5em}{green}100 \\
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.07}{0.5em}{cvpurple}15 \\
+\end{tabular}
+
+
+\section*{Portfolio}
+
+    \href{https://sites.google.com/gcet.edu.in/hemant-katta}{Hemant Katta}
+
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+
+\section*{Languages}
+\begin{tabular}{l | ll}
+\textbf{English} & C2 & \pictofraction{\faCircle}{cvgreen}{4}{black!30}{1}{\tiny} \\
+\textbf{German} & C2 & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{3}{\tiny} \\
+\textbf{Hindi} & C2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{2}{\tiny} \\
+\textbf{French} & C2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{4}{\tiny}\\
+\end{tabular}
+\bigskip
+
+\end{minipage}\hfill
+
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small \href{mailto:hemantkatta123@gmail.com}{hemantkatta123@gmail.com}\icon{\faEnvelopeO}{cvgreen}{}   \icon{\faMapMarker}{cvgreen}{}\href{https://maps.app.goo.gl/nWomEHKSBC3NySZC6}{Secunderabad} \icon{\faPhone}{cvgreen}{} $7075472774$
+}
+\end{center}
+\begin{center}
+    \href{https://www.overleaf.com/}{Designed using Overleaf an, Online LaTeX Editor}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
