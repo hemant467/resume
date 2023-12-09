@@ -1,2 +1,2 @@
-# resume
-Designed a resume using Overleaf an, Online LaTeX Editor
+# resume' 📝
+Designed 🖋️ a resume using Overleaf an, Online LaTeX Editor
